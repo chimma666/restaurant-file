@@ -1,0 +1,114 @@
+
+body{
+    background-color: #000000;
+    color: #ffffff;
+    
+}
+html,body{              /*Used here to remove the extra space from bottom*/
+    height: 100%;
+    padding: 0;
+    margin-top: -225px;
+}
+.logo{
+    width: 500px;
+    height: 1080px;
+}
+img{
+    position:absolute;
+    top: 50;
+    left: 100;
+    width: 550px;
+    border-radius: 300px;
+}
+.feedback{
+    width: 200px;
+    height: 100px;
+}
+.forum{
+    background-color: #1f1d1d;
+    border-radius: 75px;
+    text-align: center;
+    padding-top: 50px;
+    width: 500px;
+    height: 450px;
+    position: absolute;
+    top:100;
+    right:150;
+    font-size: larger;
+}
+input{
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    opacity: 0.5;
+    border-radius: 15px;
+}
+input:hover{
+    opacity: 1;
+}
+label{
+    font-size: larger;
+}
+button{
+    width: 110px; 
+    height: 55px; 
+    border-radius: 100px;
+    transition: width 500ms, height 500ms, font-size 500ms;
+    opacity: 0.75;
+}
+button:hover{
+    width: 150px;
+    height: 75px;
+    border-radius: 100px;
+    opacity: 1;
+    font-size: larger;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance:none;
+    margin: 0;
+}
+.rate {
+    float:left;
+    position: absolute;
+    right: 80;
+    height: 46px;
+    padding: 0 100px;
+    width: 300px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#000000;
+}
+.rate:not(:checked) > label:before {
+    content: '❤ ';
+}
+.rate > input:checked ~ label {
+    color: #f00505;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #f00505;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #f00505;
+}
+/* @media screen and (max-width: 1440px) and (min-width:320px){ 
+    body{
+        font-size: 80px;
+        background-image: url("/Users/Vedhas Ranade/Desktop/web_dev/s1.jpeg");
+    }
+} */
