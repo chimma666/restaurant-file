@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="recipe.css">
+    <title>Recipe Page</title>
+</head>
+
+<body>
+    <header>
+        <h1>🍳 Recipe Page</h1>
+        <p>Indulge in a culinary adventure! Explore our wonderful dishes and try your hand at creating these mouthwatering delights.</p>
+    </header>
+    <div class="container">
+        <div class="recipe-cards">
+            <div class="recipe-card" onmouseover="hoverRecipeCard(this)" onmouseout="unhoverRecipeCard(this)"
+                onclick="showRecipe('Pizza')">
+                <img src="images/pizza.jpg" alt="Pizza" style="max-width: 100px; max-height: 100px;">
+                <h2>Pizza</h2>
+            </div>
+            <div class="recipe-card" onmouseover="hoverRecipeCard(this)" onmouseout="unhoverRecipeCard(this)"
+                onclick="showRecipe('Burger')">
+                <img src="images/burger.webp" alt="Burger" style="max-width: 100px; max-height: 100px;">
+                <h2>Burger</h2>
+            </div>
+            <div class="recipe-card" onmouseover="hoverRecipeCard(this)" onmouseout="unhoverRecipeCard(this)"
+                onclick="showRecipe('Pasta')">
+                <img src="images/pasta.jpg" alt="Pasta" style="max-width: 100px; max-height: 100px;">
+                <h2>Pasta</h2>
+            </div>
+            <div class="recipe-card" onmouseover="hoverRecipeCard(this)" onmouseout="unhoverRecipeCard(this)"
+                onclick="showRecipe('Cake')">
+                <img src="images/cake.avif" alt="Cake" style="max-width: 100px; max-height: 100px;">
+                <h2>Cake</h2>
+            </div>
+            <div class="recipe-card" onmouseover="hoverRecipeCard(this)" onmouseout="unhoverRecipeCard(this)"
+                onclick="showRecipe('Pudding')">
+                <img src="images/pudding.jpg" alt="Pudding" style="max-width: 100px; max-height: 100px;">
+                <h2>Pudding</h2>
+            </div>
+        </div>
+        <div class="recipe-description">
+            <p id="recipe-text"></p>
+        </div>
+    </div>
+    <script src="recipe.js"></script>
+</body>
+
+</html>
