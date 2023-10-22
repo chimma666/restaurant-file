@@ -16,13 +16,16 @@ body{
 body{
     background-color: #302b2b;
     color:#ffffff; 
+    box-sizing: border-box;
+    width: 100%;
 }
 .container{
-    max-width: 1200px;
+    max-width: 100%;
     width: 90%;
     margin: auto;
 }
 .navbar{
+    width: 100%;
     position:fixed;
     background-color: #302b2b;
     right: 0;
@@ -48,6 +51,10 @@ h2{color:#302b2b;}
     color: #ffffff;
     background: #28a475;
 }
+.btn-primary:hover{
+    font-size: 30px;
+    background-color: #458080 ;
+}
 /* ***************navbar styling */
 /* for desktop mode */
 .navbar-container input[type='checkbox'],
@@ -67,15 +74,15 @@ h2{color:#302b2b;}
 }
 .logo{
     order: 1;
-    font-size: 3rem;
+    font-size: 2rem;
     position: fixed;
     left:0;
     padding-left: 15px;
 }
 .menu-items li{
     list-style: none;
-    margin-left: 1.5rem;
-    font-size: 1.8rem;
+    margin-right: 2rem;
+    font-size: 1.5rem;
 }
 .navbar a{
     color: rgb(255, 255, 255);
@@ -101,7 +108,7 @@ h2{color:#302b2b;}
     justify-content: center;
 /*     padding-top: 10px; */
     height: 100%;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
 }
 .showcase-container p{ padding-bottom: 10px;}
 .main-title{
@@ -111,14 +118,22 @@ h2{color:#302b2b;}
 }
 /* ***********************About us************** */
 #about{
-    padding: 50px 0px;
+    padding: 50px 15%;
     background: #ffffff;
+    display: flex;
 }
 .about-wrapper{
     display: flex;
     flex: wrap;
     /* flex-direction: row; */
     /* flex-direction: column; */
+}
+@media(max-width:768px){
+.about-wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
 }
 #about h2{
     font-size: 3.2rem;
@@ -181,7 +196,7 @@ animation: about-text-imagination 1s ease-in-out forwards;
 }
 #food h2{
     text-align: center;
-    font-size: 3rem;
+    font-size: 1.8rem;
     /* font-size: 48px; */
     font-weight: 400;
     margin-bottom: 40px;
@@ -190,15 +205,15 @@ animation: about-text-imagination 1s ease-in-out forwards;
 }
 .food-container{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .food-container img{
     display: block;
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     /* padding: 10px; */
     margin: auto;
-    max-height: px;
+    max-height: 80%;
     object-fit: cover;
     object-position: center;
 }
@@ -219,11 +234,11 @@ animation: about-text-imagination 1s ease-in-out forwards;
 }
 .img-content h3{
  color: #fff;
- font-size: 3rem;
+ font-size: 1.8rem;
 }
 .img-content a{
     z-index: 1;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 .img-container::after{
     content: "";
@@ -231,7 +246,7 @@ animation: about-text-imagination 1s ease-in-out forwards;
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 50%;
     height: 100%;
     background: rgba(0,0,0,0.871);
     /* opacity: 0; */
@@ -341,14 +356,14 @@ animation: about-text-imagination 1s ease-in-out forwards;
 /* **********************footer styling ********************* */
 #footer h2{
     text-align: center;
-    background: rgb(65, 65, 65 );
+    background: rgb(65, 65, 65);
     font-size: 20px;
     font-weight: 500;
     padding: 30px;
     color: #fff;
 }
  .container{ 
-     width: 1000px; 
+     width: 100%; 
      margin: auto; 
      transition: 0.5s; 
  } 
@@ -521,7 +536,7 @@ animation: about-text-imagination 1s ease-in-out forwards;
         position: absolute;
         top: 20px;
         left: 20px;
-        z-index: 2;
+        z-index: 1;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -531,7 +546,7 @@ animation: about-text-imagination 1s ease-in-out forwards;
      height: 4px;
      width: 100%;
     border-radius: 10px;
-    background: #333333;
+    background: #878585;
     }
    .navbar-container .hamburger-lines .line1{
     transform-origin: 0% 0%;
@@ -548,26 +563,38 @@ animation: about-text-imagination 1s ease-in-out forwards;
     padding-top: 100px;
     background: #fff;
     height: 100vh;
-    max-width: 300px;
+    max-width: 200px;
     /* transition: translateX(-150px); */
     transform: translateX(-300px);
     display: flex;
     flex-direction: column;
     margin-left: -40px;
-    padding-left: 50px;
+    padding-left: 60px;
     transition: transform 0.5s ease-in-out;
-    box-shadow: 5px 0px 10px #aaa;
+    box-shadow: 5px 0px 8px #aaa;
+   }
+   .navbar a{
+    color: #000;
    }
    .navbar .menu-items li{
     margin-bottom :30px;
+    margin-left: 10px;
     font-size: 20px;
     font-weight: 500;
    }
    .logo{
-    position: absolute;
-    top: 10px;
+    position: relativ;
+    top:10px;
+    margin-left: 10%;
     right: 15px;
     font-size: 30px;
+   }
+   .showcase-container{
+    width: 100%;
+    font-size: 1rem;
+   }
+   .btn-primary:hover {
+    font-size: 22px;
    }
    .navbar-container input[type='checkbox']:checked ~ .menu-items{
    transform: translateX(0);
@@ -583,6 +610,8 @@ animation: about-text-imagination 1s ease-in-out forwards;
    }
    /* *****************food-category*************** */
    .food-container{
+    justify-content: center;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: stretch;
    }
@@ -594,5 +623,15 @@ animation: about-text-imagination 1s ease-in-out forwards;
    }
    .img-container{
     margin: 0;
+   }
+   .testimonial-container{
+    flex-wrap: wrap;
+   }
+   #footer{
+    width: 100%;
+   }
+   .about-img img{
+    width: 75%;
+    height: 75%;
    }
 }
