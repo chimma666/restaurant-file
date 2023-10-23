@@ -6,20 +6,24 @@
         </title>
     </head>
     <body>
-        <div class="logo">
-            <img src="https://i.ibb.co/XfBtyZR/1683254736138.jpg" alt="Hotel image" width="250px">
-        </div>
-        <div class="login">
-            <h1>Login</h1>
-            <form>
-                <label for="Username">Username:</label>
-                <input type="text" placeholder="Username"><br><br>
-                <label for="Password">Password:&nbsp;</label>
-                <input type="password" placeholder="Password"><br><br>
-                <button type="button" onclick="location.href=''">Login</button>&nbsp;&nbsp;&nbsp;&nbsp;
-                <button type="reset">Reset</button>
-            </form>
-            <a href="new_user.html" target="_blank">Click here to create new user</a>
+        <div class="login-parent">
+            <div class="login-logo">
+                <img src="https://i.ibb.co/XfBtyZR/1683254736138.jpg" alt="Hotel image" width="250px">
+            </div>
+            <div class="login-login">
+                <h1>Login</h1>
+                <form class="login-form">
+                    <label for="Username">Username:</label>
+                    <input type="text" placeholder="Username"><br><br>
+                    <label for="Password">Password:&nbsp;</label>
+                    <input type="password" placeholder="Password"><br><br>
+                    <div class="login-button">
+                        <button type="button" onclick="location.href=''">Login</button>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <button type="reset">Reset</button>
+                    </div>
+                </form>
+                <a href="new_user.html" target="_blank">Click here to create new user</a>
+            </div>
         </div>
     </body>
 </html>

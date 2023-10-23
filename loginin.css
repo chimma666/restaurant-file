@@ -1,71 +1,144 @@
-body{
-    background-color: #000000;
-    color: #ffffff;
+@media screen and (max-width: 767px) {
+    .login-parent{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .login-logo{
+        width: 100%;
+        margin-left: 0%;
+        margin-top: 0%;
+    }
+
+    .login-logo img {
+        width: 60%;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .login-login{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 1%;
+        padding-bottom: 2%;
+    }
+
+    .login-form input{
+        width: 60%;
+        font-size: larger;
+    }
+
+    .login-button{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 13%;
+        margin-right: 13%;
+    }
 }
+
+@media screen and (min-width: 768px){
+    .login-parent{            /*Seperate the logo and the input form as left and right div */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .login-logo{          /*for a responsive design get the values in percentages rather than hardcoded pixels*/
+        width: 35%;
+        margin-left: 5%;
+        margin-top: 2%;
+        border-radius: 300px;
+        transition: 1.5s ease-in-out;
+    }
+
+    .login-logo img{
+        width: 100%;
+        border-radius: 300px;
+    }
+
+    .login-login{
+        padding-top: 50px;
+        width: 35%;
+        height: fit-content;
+        margin-top: 5%;
+        margin-right: 10%;
+        padding-bottom: 50px;
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+    }
+
+    .login-logo:hover{ /*Added a hover effect to the logo*/
+        transition: 1.3s;
+        width: 45%;
+        margin-left: 5%;
+        margin-top: 1%;
+        height: fit-content;
+        border-radius: 300px;
+     }
+}
+
+body{
+    background-color: black;
+    color: white;
+    margin: 0;
+}
+
 html,body{              /*Used here to remove the extra space from bottom*/
     height: 100%;
     padding: 0;
-    margin-top: -225px;
 }
-.logo{
-    width: 500px;
-    height: 1080px;
-}
-img{
-    position: absolute;
-    top: 50;
-    left: 100;
-    width: 550px;
-    border-radius: 300px;
-}
-h1{
-    padding: 10px;
-    font-style: bold;
-}
-.login{
+
+/*missing a responsive layout for smaller screen where logo gets squished on left*/
+
+.login-login{
     background-color: #1f1d1d;
     border-radius: 75px;
     text-align: center;
-    padding-top: 50px;
-    width: 500px;
-    height: 450px;
-    position: absolute;
-    top:100;
-    right:150;
     font-size: larger;
 }
-input{
+
+.login-form input{  /*more responsive desing*/
     text-align: center;
-    width: 200px;
-    height: 50px;
     opacity: 0.5;
     border-radius: 15px;
+    width: 55%;
+    height: 50px;
 }
-input:hover{
+
+.login-form input:hover{
+    font-size: larger;
     opacity: 1;
 }
-label{
+
+.login-form label{
     font-size: larger;
 }
-a{
+
+.login-login a{
     font-size: larger;
-    color: #ffffff;
+    color: white;
     text-decoration: none;
 }
-button{
-   width: 110px; 
-    height: 55px; 
-    border-radius: 100px;
-    transition: width 500ms, height 500ms, font-size 500ms;
-    opacity: 0.75;
-    outline-style: groove;
-    outline-width: 5px;
-    outline-color: rgb(138, 92, 126);
-}
-button:hover{
-    width: 150px;
-    height: 75px;
-    border-radius: 100px;
-    opacity: 1;
-    font-size: larger;
-}
+
+.login-form button{
+    width: 110px; 
+     height: 55px; 
+     border-radius: 100px;
+     transition: width 500ms, height 500ms, font-size 500ms;
+     opacity: 0.75;
+     outline-style: groove;
+     outline-width: 5px;
+     outline-color: rgb(138, 92, 126);
+ }
+
+.login-form button:hover{
+     width: 150px;
+     height: 75px;
+     border-radius: 100px;
+     opacity: 1;
+     font-size: larger;
+ }
