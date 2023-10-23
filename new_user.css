@@ -5,28 +5,34 @@ body{
 html,body{              /*Used here to remove the extra space from bottom*/
     height: 100%;
     padding: 0;
-    /* margin-top: -225px; */
+    margin-top: -225px;
+}
+.logo{
+    width: 500px;
+    height: 1080px;
+}
+img{
+    position: absolute;
+    top: 50;
+    left: 100;
+    width: 550px;
+    border-radius: 300px;
+}
+h1{
+    padding: 10px;
+    font-style: bold;
 }
 .register{
     background-color: #1f1d1d;
-    background-image: url('https://i.ibb.co/XfBtyZR/1683254736138.jpg');
-    background-position: center center;
-    background-size: 250px;
-    background-repeat: no-repeat;
-    background-blend-mode: lighten;
     border-radius: 75px;
     text-align: center;
     padding-top: 50px;
     width: 500px;
     height: 450px;
+    position: absolute;
+    top:100;
+    right:150;
     font-size: larger;
-    margin: auto;
-    margin-top: 5%;
-}
-img{
-    display: block;
-    margin: auto;
-    margin-top: 50px;
 }
 input{
     text-align: center;
