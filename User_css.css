@@ -3,7 +3,7 @@ body{
     /* background-repeat: no-repeat;
     background-size: cover;
     text-align: center; */
-    color: #ffffff;
+    color: #b4b1b1;
     
 }
 html,body{              /*Used here to remove the extra space from bottom*/
@@ -12,7 +12,7 @@ html,body{              /*Used here to remove the extra space from bottom*/
     margin-top: -225px;
 }
 .logo{
-    width: 500px;
+    width: 501px;
     height: 1080px;
 }
 img{

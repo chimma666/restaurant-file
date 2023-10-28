@@ -8,7 +8,7 @@
 }
 
 body {
-	background: linear-gradient(90deg, #C7C5F4, #776BCC);		
+	background: linear-gradient(90deg, #babac7, #776BCC);		
 }
 
 .container {
@@ -19,7 +19,7 @@ body {
 }
 
 .screen {		
-	background: linear-gradient(90deg, #5D54A4, #7C78B8);		
+	background: linear-gradient(90deg, #5D54A4, #9c94ff);		
 	position: relative;	
 	height: 600px;
 	width: 360px;	
